@@ -1,37 +1,37 @@
-# smart-trashbin
+# Smart Bin
 
-Objective was to create a IoT trash bin for automatic sorting of waste.
+Smart Bin Python library for Raspberry Pi, adopted from SunFounder PicarX Python library.
 
-<img width="486" alt="Screenshot 2025-06-25 at 11 51 14 PM" src="https://github.com/user-attachments/assets/81120d4b-ad84-40b8-a99c-b8a6b0e83424" />
+## Installation
 
-<img width="632" alt="Screenshot 2025-06-25 at 11 51 32 PM" src="https://github.com/user-attachments/assets/c4e34ac2-c1e2-4c24-ac8b-8b79a1943bba" />
+ > **Note**
+  You also need to install robot_hat, vilib, sunfounder_controller and other dependent libraries.\
+  <https://docs.sunfounder.com/projects/picar-x-v20/en/latest/python/python_start/install_all_modules.html>
 
-## Motivation
+```bash
+git clone -b v2.0 https://github.com/JiaqiZhao2004/smart-bin.git
+cd smart-bin
+sudo python3 setup.py install
 
-Every day, countless recyclable and compostable materials get dumped into the single closet trash bin someone can find. Unfortunately, existing systems make it confusing and inconvenient for someone to properly dispose of their trash. There is usually confusion about whether the material is recyclable, and if it is, where is the recycling bin for me to dispose of it? With everyone’s busy schedule, the most convenient decision is to toss it in the closet bin. This decision repeated thousands of times a day can lead to very serious environmental damage.
+```
+----------------------------------------------
 
-Contamination in recycling streams is an even bigger issue. Approximately 25% of materials in recycling bins are contaminated, resulting in entire batches of recycled items being sent to landfills.[1] This mismanagement results in a loss of valuable resources and imposes substantial financial burdens on municipalities, where waste management consumes up to 20% of city budgets.[2] Moreover, organic waste such as food and yard clippings, when improperly disposed of in landfills, decomposes anaerobically and produces methane, a greenhouse gas 80 times more potent than carbon dioxide over 20 years. Food waste alone accounts for 58% of methane emissions from solid waste landfills.[3] 
- 
-Our team plans to tackle these challenges with our IoT-based Smart Bin. It is built to automatically sort waste into four categories: recyclables, trash, compost, and electronics. Using a combination of sensors and machine learning, the system identifies and sorts each item to reduce human error. All the user needs to do is place their waste in the center of the bin, and the system takes care of the rest, automatically dropping it into the correct compartment. This solution saves time, removes the need for decision-making, and helps conserve valuable resources for the future.
+## License
 
- Sources:
- 
-[1]https://recyclops.com/understanding-recycling-contamination/#:~:text=The%20Impact%20of%20Recycling%20Contamination,contaminated%20and%20cannot%20be%20recycled.
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
-[2]https://www.hlp.city/en-us/articles/how-us-cities-can-win-the-fight-against-trash
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied wa rranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-[3]https://news.climate.columbia.edu/2020/03/13/fix-recycling-america/
+You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-## Software
+{Repository Name} comes with ABSOLUTELY NO WARRANTY; for details run ./show w. This is free software, and you are welcome to redistribute it under certain conditions; run ./show c for details.
 
-Image classifcation model can be found in smart-bin/models
+SunFounder, Inc., hereby disclaims all copyright interest in the program '{Repository Name}' (which makes passes at compilers).
 
-Built a new library found in smart-bin-main. This library consists mainly of the smartbin.py file (adapted from the picarx.py file). This file configures the 4 PWM pins we used for the 4 servos to control the 4 flaps. Calibration values for the 4 servo motors are hard-coded to the library, such that when a servo angle is zero, the servo is turned to a degree where the flap is closed. 
+Mike Huang, 21 August 2015
 
-driver.py loads the classifier model and sets up connections with the camera. Then, the bin sequentially does the following: checks bin fullness (if full, lights up LED and exits), captures a trash image, determines trash category, opens the corresponding bin, and closes the bin. 
+Mike Huang, Chief Executive Officer
 
-## Hardware
+Email: service@sunfounder.com, support@sunfounder.com
 
-3D printed Servo Hinges: https://www.thingiverse.com/thing:1323380
-
-Hardware used included a raspberry pi, pi camera, 4 servos, 4 servo hinges, ultrasonic sensor and LED
+----------------------------------------------
