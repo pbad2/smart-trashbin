@@ -1,3 +1,0 @@
-smartbin
-=======================
-Library for smartbin
