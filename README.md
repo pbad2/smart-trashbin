@@ -9,7 +9,7 @@ Smart Bin Python library for Raspberry Pi, adopted from SunFounder PicarX Python
   <https://docs.sunfounder.com/projects/picar-x-v20/en/latest/python/python_start/install_all_modules.html>
 
 ```bash
-git clone -b v2.0 https://github.com/JiaqiZhao2004/smart-bin.git
+git clone -b v2.0 [https://github.com/pbad2/smart-trashbin.git]
 cd smart-bin
 sudo python3 setup.py install
 
