@@ -1,0 +1,32 @@
+Metadata-Version: 2.2
+Name: smartbin
+Version: 0.0.1
+Summary: smartbin Library for Raspberry Pi
+Home-page: https://github.com/JiaqiZhao2004/smart-bin
+Author: SunFounder, JiaqiZhao2004
+Author-email: royzhao2004@outlook.com
+License: GNU
+Keywords: python raspberry pi GPIO sunfounder
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+License-File: LICENSE
+Requires-Dist: readchar
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+smartbin
+=======================
+Library for smartbin
