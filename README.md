@@ -34,4 +34,4 @@ driver.py loads the classifier model and sets up connections with the camera. Th
 
 3D printed Servo Hinges: https://www.thingiverse.com/thing:1323380
 
-Hardware used included a raspberry pi, pi cammera, 4 servo, 4 servo hinges, ultrasonice sensor and LED
+Hardware used included a raspberry pi, pi camera, 4 servos, 4 servo hinges, ultrasonic sensor and LED
