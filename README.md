@@ -30,6 +30,7 @@ Contamination in recycling streams is an even bigger issue. Approximately 25% of
 Our team plans to tackle these challenges with our IoT-based Smart Bin. It is built to automatically sort waste into four categories: recyclables, trash, compost, and electronics. Using a combination of sensors and machine learning, the system identifies and sorts each item to reduce human error. All the user needs to do is place their waste in the center of the bin, and the system takes care of the rest, automatically dropping it into the correct compartment. This solution saves time, removes the need for decision-making, and helps conserve valuable resources for the future.
 
 Sources:
+
 [1]https://recyclops.com/understanding-recycling-contamination/#:~:text=The%20Impact%20of%20Recycling%20Contamination,contaminated%20and%20cannot%20be%20recycled.
 
 [2]https://www.hlp.city/en-us/articles/how-us-cities-can-win-the-fight-against-trash
